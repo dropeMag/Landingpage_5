@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: #fff;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background: url(img/img_background.jpg) center no-repeat;
+    background-size: cover;
+}
+
+/*------------------------------------
+MAIN
+------------------------------------*/
+main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/*------------------------------------
+FORMS
+------------------------------------*/
+form{
+    background-color: #0f1134;
+    box-shadow: 0em 0em 3em #00000050;
+    padding: 2em;
+}
+
+/*------------------------------------
+FORM TITLE
+------------------------------------*/
+form h1{
+    font-size: 2.5em;
+    margin-bottom: .6em;
+    user-select: none;
+}
+
+/*------------------------------------
+FORM INPUT SPANS
+------------------------------------*/
+form fieldset span{
+    position: relative;
+    display: block;
+    width: 15em;
+    margin-top: 1em;
+    padding: 1em 0;
+}
+
+/*------------------------------------
+LABELS
+------------------------------------*/
+form fieldset span label{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-10%, -50%);
+    color: #fff;
+    font-weight: 600;
+    user-select: none;
+    z-index: 1;
+    transition: top .3s, left .3s, transform .3s, font-size .3s;
+}
+
+/*------------------------------------
+INPUT
+------------------------------------*/
+form fieldset span input{
+    position: relative;
+    width: 100%;
+    padding: .5em;
+    background-color: transparent;
+    border-bottom: 1px solid #fff;
+    z-index: 2;
+}
+
+/* LABEL EFFECT */
+form fieldset span input:hover ~ label,
+form fieldset span input:focus ~ label,
+label.userTexted{
+    top: 8%;
+    left: 2%;
+    transform: translate(-2%, -8%);
+    font-size: .8em;
+    opacity: 85%;
+}
+
+/* FORGOT PASSWORD */
+form fieldset p{
+    width: fit-content;
+    padding: .2em .4em;
+    cursor: pointer;
+    float: right;
+    font-size: .8em;
+}
+
+form fieldset p:hover{
+    color: #ff61fa;
+}
+
+/*------------------------------------
+BUTTON
+------------------------------------*/
+form button{
+    position: relative;
+    width: 9em;
+    height: 3em;
+    margin-top: 2em;
+    background-color: transparent;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+/* ANIMATED BACKGROUND */
+form button div{
+    position: absolute;
+    top: -200%;
+    left: -200%;
+    transform: translate(-200%, -200%);
+    background: conic-gradient(#ff61fa, transparent 30%);
+    width: 500%;
+    height: 500%;
+    animation: button-bg 3s infinite linear;
+    cursor: pointer;
+}
+
+@keyframes button-bg {
+    from{
+        transform: rotate(0deg);
+    }
+    
+    to{
+        transform: rotate(-360deg);
+    }
+}
+
+/* INPUT */
+form button input{
+    position: relative;
+    background-color: #0f1134;
+    width: calc(100% - .3em);
+    height: calc(100% - .3em);
+    cursor: pointer;
+}
+
+/*------------------------------------
+ANIMATION TRANSITION
+------------------------------------*/
+form button:hover{
+    overflow: visible;
+}
+
+form button:hover div{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background-color: #ff61fa;
+    filter: blur(1em);
+    animation: none;
+}
+
+form button:hover input{
+    color: #ff61fa;
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+/*------------------------------------
+NOT A MEMBER? SIGN UP NOW
+------------------------------------*/
+section{
+    padding: .5em 0;
+}
+
+section p a{
+    color: #ff61fa;
+}
+
+section p a:hover{
+    text-decoration: underline;
+}
