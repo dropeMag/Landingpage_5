@@ -11,9 +11,14 @@
 <h4 align="center"> :white_check_mark: Done :white_check_mark: </h4>
 
 :airplane: Link:
-https://dropemag.github.io/Landingpage_5/
+- <a href="https://dropemag.github.io/Landingpage_5/" target="_blank">Landingpage_5</a>
+</br>
 
 :hammer_and_wrench: Languages:
 - HTML;
 - CSS;
 - JS.
+</br>
+
+:pushpin: Credits:
+- <a href="https://br.freepik.com/vetores-gratis/fundo-gradiente-escuro-com-espaco-de-copia_14731307.htm#query=fundo%20degrade&position=19&from_view=search&track=sph" target="_blank">Rawpixel Image</a>
